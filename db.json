@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "name": "Nikhil Chandrakar",
+      "email": "mbserious00@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "prem prakash",
+      "email": "prem@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "Rishabh",
+      "email": "Rishabh@gmail.com",
+      "id": 4
+    },
+    {
+      "name": "akil123",
+      "email": "akil@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "john",
+      "email": "john@gmail.com",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,49 @@
+<!-- <p>data-table works!</p> -->
+
+
+<div class="container  c1">
+
+  <table class="table  table-hover t1">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let x of newData ; let i = index" >
+
+      <tr>
+        <td>{{i+1}}</td>
+        <td>{{x.name}}</td>
+        <td>{{x.email}}</td>
+
+
+
+        <td>
+
+          <!-- <button (click)="DELETE(x.id)">DELETE</button> -->
+
+    <button mat-raised-button color="warn"  [ngStyle]="{'background':'red'}"  class="m-3"(click)="DELETE(x.id)">DELETE</button>
+
+    <button mat-raised-button color="warn"   [ngStyle]="{'background':'green'}" class="m-3"(click)="UPDATE(x)">UPDATE</button>
+
+
+
+        <!-- <button (click)="UPDATE(x)">UPDATE</button></td> -->
+
+      </tr>
+
+    </tbody>
+  </table>
+
+
+
+
+
+
+  <!-- <button (click)="Form()">form</button> -->
+  <button mat-raised-button color="warn"   [ngStyle]="{'background':'purple'}" class="m-3" (click)="Form()">Form</button>
+
+</div>

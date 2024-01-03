@@ -1,0 +1,19 @@
+<p>log works!</p>
+
+<div>
+  <form [formGroup]="loginform" (ngSubmit)="login(loginform.value)">
+    <div>
+      <label>Username</label>
+      <input type="text" formControlName="name"/>
+    </div>
+    <div *ngIf="checkError('name','required')">required</div>
+    <div>
+      <label>Password</label>
+      <input type="password" formControlName="pass"/>
+    </div>
+    <div *ngIf="checkError('pass','required')">required</div>
+
+
+    <button>Log</button>
+  </form>
+</div>
